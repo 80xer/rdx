@@ -1,3 +1,17 @@
 body {
-  line-height: 2;
+  font-size: 20px;
+}
+
+#value {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.button-group {
+  margin: 20px auto;
+}
+
+.button-group button {
+  padding: 4px 20px;
+  font-size: 30px;
 }

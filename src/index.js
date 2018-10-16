@@ -1,5 +1,13 @@
-import style from './main.css';
-console.log(`I'm a silly entry point`);
-const arr = [1, 2, 3];
-const iAmJavascriptES6 = () => console.log(...arr);
-window.iAmJavascriptES6 = iAmJavascriptES6;
+import './main.css';
+
+const counter = document.getElementById('value');
+const incrementButton = document.getElementById('increment');
+const decrementButton = document.getElementById('decrement');
+
+incrementButton.addEventListener('click', () => {
+  counter.innerHTML = parseInt(counter.innerHTML, 10) + 1;
+});
+
+decrementButton.addEventListener('click', () => {
+  counter.innerHTML = parseInt(counter.innerHTML, 10) - 1;
+});
